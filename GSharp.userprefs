@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GSharp.Addins/ForeRunner305.cs">
+    <Files>
+      <File FileName="GSharp/MainWindow.cs" Line="74" Column="6" />
+      <File FileName="GSharp.Protocols/Garmin.cs" Line="46" Column="49" />
+      <File FileName="GSharp.Data/DataStore.cs" Line="26" Column="23" />
+      <File FileName="GSharp/NameGarminDialog.cs" Line="10" Column="22" />
+      <File FileName="GSharp.Addins/ForeRunner305.cs" Line="4" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="External References" expanded="True">
+            <Node name="LibUsbDotNet" selected="True" />
+          </Node>
+          <Node name="Test Apps" expanded="True" />
+          <Node name="GSharp.Addins" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

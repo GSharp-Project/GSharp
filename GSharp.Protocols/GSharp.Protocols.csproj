@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB1AB64B-901F-484C-B871-DC1DDCDD2325}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GSharp.Protocols</RootNamespace>
+    <AssemblyName>GSharp.Protocols</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Addins, Version=0.6.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\usr\lib\cli\Mono.Addins-0.2\Mono.Addins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Garmin.cs" />
+    <Compile Include="GarminUnit.cs" />
+    <Compile Include="Types\Command.cs" />
+    <Compile Include="Types\Datatype.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="Types\Structures.cs" />
+    <Compile Include="Types\Enumerations.cs" />
+    <Compile Include="Types\Run.cs" />
+    <Compile Include="Types\Lap.cs" />
+    <Compile Include="Types\Workout.cs" />
+    <Compile Include="AddIns\IGarminUnit.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Types\" />
+    <Folder Include="AddIns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External References\LibUsbDotNet_Src.2.2.8\LibWinUsb\LibUsbDotNet.csproj">
+      <Project>{0A78F6FF-5586-4052-8104-E23FF83A7CE1}</Project>
+      <Name>LibUsbDotNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
