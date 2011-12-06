@@ -5,7 +5,7 @@
 // | |_| | |_) | |  | |  __/ || (_| | |
 // |____/|_.__/|_|  |_|\___|\__\__,_|_|
 //
-// Auto-generated from main on 2011-12-03 22:20:27Z.
+// Auto-generated from main on 2011-12-05 20:39:32Z.
 // Please visit http://code.google.com/p/dblinq2007/ for more information.
 //
 namespace GSharp.Data

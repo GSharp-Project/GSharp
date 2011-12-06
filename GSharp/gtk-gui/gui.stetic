@@ -35,6 +35,12 @@
         <property name="StockId">gtk-find</property>
         <signal name="Activated" handler="OnFindActionActivated" />
       </action>
+      <action id="refreshAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">gtk-refresh</property>
+        <signal name="Activated" handler="OnRefreshActionActivated" />
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
@@ -67,6 +73,7 @@
             <node name="toolbar2" type="Toolbar">
               <node type="Toolitem" action="findAction" />
               <node type="Toolitem" action="executeAction" />
+              <node type="Toolitem" action="refreshAction" />
             </node>
           </widget>
           <packing>
